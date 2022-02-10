@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<html>
+<body>
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <br/>
+    <h4>Fizz Buzz Program</h4>
+    <br/>
+    @for (var i=1;i <=100;i++){
+        @if (i % 3 == 0 && i % 5 ==0){
+            <p>FizzBuzz</p>
+        }
+        else if (i % 3 == 0){
+            <p>FizzBuzz</p>
+        }
+          else if (i % 5 == 0){
+            <p>Buzz @i</p>
+        }
+        else {
+            <p>@i</p>
+            }
+    }
+</div>
+</body>
+</html>
